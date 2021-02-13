@@ -2,14 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fm-swordman.github.io</id>
     <title>Gridea</title>
-    <updated>2020-12-19T03:42:34.511Z</updated>
+    <updated>2021-02-13T14:54:04.333Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fm-swordman.github.io"/>
     <link rel="self" href="https://fm-swordman.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://fm-swordman.github.io/images/avatar.png</logo>
     <icon>https://fm-swordman.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[开发相册集筛选程序的过程(2.10-2.13)]]></title>
+        <id>https://fm-swordman.github.io/post/kai-fa-xiang-ce-ji-shai-xuan-cheng-xu-de-guo-cheng-210-213/</id>
+        <link href="https://fm-swordman.github.io/post/kai-fa-xiang-ce-ji-shai-xuan-cheng-xu-de-guo-cheng-210-213/">
+        </link>
+        <updated>2021-02-13T13:00:27.000Z</updated>
+        <content type="html"><![CDATA[<p>2.9号晚:新的显示器到了，吃完酒回家就装上，准备开坑</p>
+<!-- 2月10号 -->
+<p>与LBL约好他搞人脸识别我整UI，说实话人脸识别对我来说是个新坑，有人帮忙省去了我很多学习成本。我们决定先用几张集体照扣出每个人的照片进行第一次学习，然后用第一次机器学习的结果比对更多人脸来壮大人脸识别样本。早上我帮他整了个python遍历整理的脚本。</p>
+<p>临近中午时<img src="https://fm-swordman.github.io/post-images/1613221780944.png" alt="" loading="lazy"></p>
+<p>看起来一切都很乐观呢。。。此时还没有意识到巨坑。<br>
+甚至谈笑起来互相问对方的进度，仿佛自己这边准备就绪，在催促对方做快点。<br>
+甚至还打起了csgo</p>
+<!-- 2月11号 -->
+<p>大年三十<br>
+LBL那边事情不对劲了起来<img src="https://fm-swordman.github.io/post-images/1613222883371.jpg" alt="" loading="lazy">，opencv,算法,样本,不知道哪个环节出了问题，模型预测精准度相当的低，以至于在壮大人脸库的过程中开始乱收纳人脸，最后准备手动壮大人脸库。</p>
+<p>此时我这边还处于起步阶段，sqlite的批量写入初步写完，sqlite部分整完了，<img src="https://fm-swordman.github.io/post-images/1613222896689.PNG" alt="" loading="lazy">下一步是整UI和人脸信息录入，此时已到正午，吃完饭后催促了下api的事情，然后开始搞UI。<br>
+前一天晚上我已经用keynote画好样图（这个ppt制作软件画图真方便，内置素材也多），下午我就把各个元素等比例放大做成素材，打算用Unity（一个游戏制作引擎，因为贪图跨平台所以选了他）把主页面什么的搞出来。结果发现虽然看了几天的Unity UI设计教程，结果手还是很生以至于不知所措<img src="https://fm-swordman.github.io/post-images/1613222917038.PNG" alt="" loading="lazy">，再加上画图的比例没控制好，画质很糙。而且macOS莫名其妙装不上Adobe CC2018，就难受了一个下午。终于我也踩进了坑里。</p>
+<!-- 2月12号-->
+<p>正月初一<br>
+讨论了以下关于照片放哪的问题，LBL认为应该放在服务器，但我觉得应该放在本地。之后LBL那边似乎挺顺利，表示照片发给他，他把结果打包成json文件发给我<img src="https://fm-swordman.github.io/post-images/1613223132659.png" alt="" loading="lazy"></p>
+<p>然后我这边中午在吃酒（连着吃第三天），在酒席到尾声的时候，拿出手机打开知乎，找了下关于管理照片的，然后发现了photoprism，这玩意儿还是用sqlite做数据库的，但之后发现这东西没有ios客户端，且没办法动态显示（这里的动态是指根据需求变更显示），而且还需要再服务端搭建docker环境，重点是服务器费用导致了买了服务器不知道能开多久（因为阿里云的云翼计划关了，再也没有9.5一个月的学生服务器了），犹豫不决中</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://fm-swordman.github.io/post/hello-gridea/</id>
