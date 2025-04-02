@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Chentong Ye's Website"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Chentong Ye"
 description              : &description "personal description"
 url                      : https://fm-swordman.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "white-personal-profile.png"
+  avatar           : "white-profile-large.png"
   name             : "Chentong Ye"
   pronouns         : # example: "she/her"  
   bio              : # "Short biography for the left-hand sidebar"
